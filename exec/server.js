@@ -11,7 +11,7 @@ const res_json = [
     { id: 3, name: "Keio" }
 ];
 app.get("/", (req, res) => {
-    res.send("こんにちは");
+    res.send({ id: 1, name: "taro" });
 });
 app.get("/api", (req, res) => {
     res.send(res_json);
