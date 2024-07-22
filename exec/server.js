@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
     res.send("こんにちは");
 });
 app.get("/api", (req, res) => {
-    res.json(res_json);
+    res.send(res_json);
 });
 app.listen(3000, () => {
     console.log('ポート3000番で起動しました。');

@@ -12,7 +12,7 @@ app.get("/", (req:express.Request, res:express.Response)=>{
 });
 
 app.get("/api",(req:express.Request, res:express.Response)=>{
-    res.json(res_json);
+    res.send(res_json);
 });
 
 app.listen(3000,()=>{
