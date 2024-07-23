@@ -1,7 +1,7 @@
 import express from 'express';
 const app: express.Express = express();
 
-app.use(express.static('public'));
+app.use(express.static('/home/akira/my_express_app/public'));
 
 const res_json = [
     {id: 1, name: "Taro"},
