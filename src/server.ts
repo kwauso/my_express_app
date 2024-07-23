@@ -1,6 +1,8 @@
 import express from 'express';
 const app: express.Express = express();
 
+app.use(express.static('public'));
+
 const res_json = [
     {id: 1, name: "Taro"},
     {id: 2, name: "Hanako"},
