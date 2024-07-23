@@ -11,7 +11,7 @@ const res_json = [
     { id: 3, name: "Keio" }
 ];
 app.get("/", (req, res) => {
-    res.send({ id: 1, name: "taro" });
+    res.send("This is test page. If you want to get api, please access '/api'.");
 });
 app.get("/api", (req, res) => {
     res.send(res_json);

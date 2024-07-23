@@ -8,7 +8,7 @@ const res_json = [
 ]
 
 app.get("/", (req:express.Request, res:express.Response)=>{
-    res.send({id: 1, name:"taro"});
+    res.send("This is test page. If you want to get api, please access '/api'.");
 });
 
 app.get("/api",(req:express.Request, res:express.Response)=>{
